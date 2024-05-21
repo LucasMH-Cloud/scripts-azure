@@ -1,5 +1,5 @@
 # Conectando-se à sua conta do Azure
-Connect-AzAccount -Tenant 812a6bd0-5829-4196-b2be-d0580b7bd0cb -Subscription f9766fcb-30d2-4992-b2ea-c39cbfd71fe9
+Connect-AzAccount -Tenant <Your Tenant> -Subscription <Your Subscription>
 
 # Definindo detalhes da assinatura e do recurso
 #$resourceGroupName = "prd-us-nwc-rg"
