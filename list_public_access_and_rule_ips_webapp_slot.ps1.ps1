@@ -1,12 +1,10 @@
 # Conectando-se à sua conta do Azure
 Connect-AzAccount -Tenant <Your Tenant> -Subscription <Your Subscription>
 
-# Definindo detalhes da assinatura e do recurso
-#$resourceGroupName = "prd-us-nwc-rg"
+#Path do export do CSV
 $outputCsvPath = "C:\Temp\WebApp_Slot_AccessRestrictions.csv"
 # Obter todos os grupos de recursos na assinatura
 $resourceGroups = Get-AzResourceGroup
-#$appServices = Get-AzWebApp -ResourceGroupName $resourceGroupName
 
 # Criando um array para armazenar os dados das restrições de acesso
 $accessRestrictionsData = @()
