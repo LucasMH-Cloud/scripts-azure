@@ -30,7 +30,7 @@ foreach ($resourceGroup in $resourceGroups){
                 foreach ($restriction in $accessRestriction) {
                     $accessRestrictionResult = [PSCustomObject]@{
                         ResourceGroup = $resourceGroup.ResourceGroupName
-                        "Name WebApp Slot" = $slotsNames
+                        "Name WebApp Slot" = $slot.Name
                         "Rule Name"   = $restriction.Name
                         IpAddress     = $restriction.IPAddress
                         Action        = $restriction.Action
